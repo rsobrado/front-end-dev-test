@@ -1,2 +1,2 @@
 # front-end-dev-test
-Test for job candidates (front end developer role)
+Please <a href="https://help.github.com/articles/fork-a-repo/">fork this repo</a> and follow the instructions in instructions.html
