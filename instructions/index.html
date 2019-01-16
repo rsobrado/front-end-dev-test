@@ -23,9 +23,11 @@
             margin: 1.33em 0 .66em 0;
         }
 
-        li{
+        li {
             margin-bottom: .66em;
         }
+
+
 
         .image-section{
             overflow: visible;
@@ -48,25 +50,12 @@
     </style>
 </head>
 <body>
-    <h1>
-        TFA Front End Code Test
-    </h1>
-    <p>
-        Congratulations on making it through to the code test round of our application process!
-        This test consists of one JavaScript/NodeJS project and a short HTML/CSS project.
-    </p>
-    <p>
-        Keep in mind as you complete this test that should we decide to continue to a technical interview, we'll
-        be asking you questions about the code you have written.
-    </p>
     <h2>JavaScript/NodeJS Test</h2>
     <p>
         For this test, you'll write a node module with a method
         that validates whether or not a given string is a <a href="https://en.wikipedia.org/wiki/Palindrome">palindrome</a>.
-        (You can assume ascii text only, but the code should ignore non alphanumeric characters in evaluating palindromes).
-    </p>
-    <p>
-        Please
+        (assume ascii text and numbers, but the code should ignore non alphanumeric characters in evaluating sentences,
+        which may contain punctuation).
     </p>
     <p>It should:</p>
     <ul>
@@ -78,8 +67,12 @@
                 <li>
                     Return <strong>false</strong> when a String is <strong>not</strong> a palindrome
                 </li>
-                <li>When passed a parameter that is not a String, throws an Error, or an object that is an instance of one,
-                   with a descriptive message about what went wrong</li>
+                <li>
+                    Return <strong>false</strong> when a String is empty
+                </li>
+                <li>
+                    When passed a parameter that is not a String, throws an Error, or an object that is an instance of one,
+                    with a descriptive message about what went wrong
                 </li>
             </ul>
         </li>
@@ -99,7 +92,7 @@
     </div>
     <ul>
         <li>
-            The headings should use Merriweather (Light), and all other fonts should use Roboto. (These are open source approximations
+            The headings should be in Merriweather (Light), and all other text should be Roboto. (These are open source approximations
             of our on-brand fonts available through Google's Fonts API).  Headings that are not white should be #013745.
         </li>
         <li>
@@ -110,14 +103,22 @@
             ( <img class="inline-image" src="img/active-nav-item.png"> )
         </li>
         <li>
-            <img title="active menu card hover state" style="float:right;" src="img/active-menu-card.png">
+            <img style="float: right;" title="active menu card hover state" src="img/active-menu-card.png">
             For the menu cards, The space between the heading and the description should have a #ffad00 separator when
             focused and hovered. The separator should be animated into view (spreading outward to full length from 0px
             wide). The hover state should apply whenever any part of the card is hovered over.
         </li>
         <li>
+            Links should use Fragment Identifiers to mock out functionality.
+        </li>
+        <li>
             The page should be navigable by keyboard.
         </li>
+        <li>
+            This portion of the test should not require any JavaScript.
+        </li>
     </ul>
+
+    <h2></h2>
 </body>
 </html>
