@@ -66,26 +66,27 @@
     </p>
     <h2>JavaScript/NodeJS</h2>
     <p>
-        For this test, you'll write a node module with a method
+        For this test, you'll write a function exposed as a method of a node module
         that validates whether or not a given string is a <a href="https://en.wikipedia.org/wiki/Palindrome">palindrome</a>.
         (assume ascii text and numbers, but the code should ignore non alphanumeric characters in evaluating sentences,
         which may contain punctuation).
     </p>
-    <p>It should:</p>
+    <p>The module should:</p>
     <ul>
-        <li>Expose a method called "isPalindrome" that should:
+        <li>
+            Expose a method called "isPalindrome" that should take a string as an argument. That method should:
             <ul>
                 <li>
-                    Return <strong>true</strong> when a String <strong>is</strong> a palindrome
+                    Return <strong>true</strong> when that String <strong>is</strong> a palindrome
                 </li>
                 <li>
-                    Return <strong>false</strong> when a String is <strong>not</strong> a palindrome
+                    Return <strong>false</strong> when that String is <strong>not</strong> a palindrome
                 </li>
                 <li>
-                    Return <strong>false</strong> when a String is empty
+                    Return <strong>false</strong> when that String is empty
                 </li>
                 <li>
-                    When passed a parameter that is not a String, throws an Error, or an object that is an instance of one,
+                    When passed a parameter that is not a String, throw an Error, or an object that is an instance of one,
                     with a descriptive message about what went wrong
                 </li>
             </ul>
@@ -93,7 +94,7 @@
     </ul>
     <h2>HTML/CSS</h2>
     <p>
-        For this test, using HTML and CSS3 (assume full standard compliance - don't worry about shims) implement this
+        For this test, using only custom HTML and CSS3 (assume full standard compliance - don't worry about shims) implement this
         page with attention to responsive design:
     </p>
     <h3>Mobile</h3>
@@ -119,11 +120,16 @@
         <li>
             <img style="float: right;" title="active menu card hover state" src="docs/img/active-menu-card.png">
             For the menu cards, The space between the heading and the description should have a #ffad00 separator when
-            focused and hovered. The separator should be animated into view (spreading outward to full length from 0px
-            wide). The hover state should apply whenever any part of the card is hovered over.
+            focused and hovered. The separator should be animated into view (spreading outward from 0px wide to roughly the width 
+            displayed in the image to the right). The hover state should apply whenever any part of the card is hovered over.
         </li>
         <li>
-            Links should use Fragment Identifiers to mock out functionality.
+            Menu cards should be links, and they should all dynamically adjust to fit the height of the 
+            element with the most content. (All card tops and bottoms should always be flush.)
+        </li>
+        <li>
+            Links should use Fragment Identifiers to mock out paging functionality.  
+            (Clicking on the "My Classrooms" link should change the url fragment.)
         </li>
         <li>
             The page should be navigable by keyboard.
