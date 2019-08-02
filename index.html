@@ -66,33 +66,51 @@
     </p>
     <h2>JavaScript/NodeJS</h2>
     <p>
-        For this test, you'll write a function exposed as a method of a node module
-        that validates whether or not a given string is a <a href="https://en.wikipedia.org/wiki/Palindrome">palindrome</a>.
+        For this test, you'll write two functions exposed as methods of a node module.
+    </p>
+    <p>
+        The first method (isPalindrome) should validate whether or not a given string is a <a href="https://en.wikipedia.org/wiki/Palindrome">palindrome</a>.
         (assume ascii text and numbers, but the code should ignore non alphanumeric characters, as in evaluating sentences
         which may contain punctuation spaces and capitalization).
     </p>
-    <p>The module should:</p>
+    <p>
+        The second method (randomAsyncStringIsPalindrome) will return whether or not a random unknown string 
+        (from an asynchronous service) is a palindrome.
+    </p>
+    <h3>isPalindrome</h3>
+    <p>
+        This method should take a string as an argument. That method should:
+    </p>
     <ul>
         <li>
-            Expose a method called "isPalindrome" that should take a string as an argument. That method should:
-            <ul>
-                <li>
-                    Return <strong>true</strong> when that String <strong>is</strong> a palindrome
-                </li>
-                <li>
-                    Return <strong>false</strong> when that String is <strong>not</strong> a palindrome
-                </li>
-                <li>
-                    Return <strong>false</strong> when that String is empty
-                </li>
-                <li>
-                    When passed a parameter that is not a String, throw an Error, or an object that is an instance of one,
-                    with a descriptive message about what went wrong
-                </li>
-            </ul>
+            Return <strong>true</strong> when that String <strong>is</strong> a palindrome
+        </li>
+        <li>
+            Return <strong>false</strong> when that String is <strong>not</strong> a palindrome
+        </li>
+        <li>
+            Return <strong>false</strong> when that String is empty
+        </li>
+        <li>
+            When passed a parameter that is not a String, throw an Error, or an object that is an instance of one,
+            with a descriptive message about what went wrong
         </li>
     </ul>
-    <p>Please show your work - your unit tests are <em>very</em> appreciated!</p>
+    <h3>randomAsyncStringIsPalindrome</h3>
+    <p>
+        This method should take an Object as an argument 
+        (you do not have to implement this Object - its documentation is below: MysteryStringObjectGetter), 
+        and using the interface it exposes fetch a string and return a Promise that will resolve 
+        either true or false, indicating whether or not the fetched result is a palindrome.
+    </p>
+    <h3>Documentation for MysteryStringObjectGetter</h3>
+    <ul>
+        <li>
+            get() <br/>
+            makes an asynchronous http request and returns a Promise that will resolve to a String if the request is successful.
+        </li>
+    </ul>
+    <p><strong>Please show your work - your unit tests are <em>very</em> appreciated!</strong></p>
     <h2>HTML/CSS</h2>
     <p>
         For this test, using only custom HTML and CSS3 (assume full standard compliance - don't worry about shims) implement this
